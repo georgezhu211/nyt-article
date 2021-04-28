@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Libre Franklin';
+  src: url('../assets/Libre_Franklin/static/LibreFranklin-Bold.ttf')
+    format('truetype');
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 45px;
+  padding-left: 100px;
+  padding-right: 100px;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left,
+.nav-center,
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+span.nav-icon {
+  font-size: 20px;
+  padding: 0 15px;
+}
+
+.nav-space {
+  font-family: 'Libre Franklin';
+  font-size: 14px;
+}
+
+.nyt-logo {
+  background: url(../assets/185px-NewYorkTimes.svg.png) no-repeat;
+  width: 220px;
+  height: 100%;
+  background-position: center;
+}
+
+.nav-right {
+  padding: 0 20px;
+}
+
+.nav-btn {
+  border: 1px solid blue;
+  background-color: #5f8191;
+  border-radius: 3px;
+  font-family: 'Libre Franklin';
+  font-size: 11px;
+  padding: 9px 12px;
+  color: rgb(255, 255, 255);
+  margin-left: 9px;
+}
