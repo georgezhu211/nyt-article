@@ -3,7 +3,7 @@
   src: url('../assets/Libre_Franklin/static/LibreFranklin-Bold.ttf')
     format('truetype');
 }
-
+/* Navbar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -50,4 +50,74 @@ span.nav-icon {
   padding: 9px 12px;
   color: rgb(255, 255, 255);
   margin-left: 9px;
+}
+/* Header */
+.header {
+  width: 600px;
+  margin: 0 auto;
+  padding: 50px 0 25px 0;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  border-bottom: 1px solid #ddd;
+}
+/* Social Media Links */
+
+.social-links {
+  display: flex;
+  width: 600px;
+  margin: 0 auto;
+  padding: 15px 0;
+  align-items: center;
+}
+
+.social-links div:nth-child(-n + 5) {
+  width: 27px;
+  height: 27px;
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  border: 1px solid #e2e2e2;
+  margin-right: 15px;
+}
+
+.social-links div:hover {
+  background-color: white;
+}
+
+.facebook-icon {
+  background: url(../assets/iconmonstr-facebook-1.svg);
+}
+.whatsapp-icon {
+  background: url(../assets/iconmonstr-whatsapp-1.svg);
+}
+.twitter-icon {
+  background: url(../assets/iconmonstr-twitter-1.svg);
+}
+.email-icon {
+  background: url(../assets/iconmonstr-email-1.svg);
+}
+.share-icon {
+  background: url(../assets/iconmonstr-arrow-58.svg);
+}
+.bookmark-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 9px;
+  background: url(../assets/iconmonstr-bookmark-thin.svg) no-repeat;
+  background-position: center;
+}
+.bubble-icon {
+  position: relative;
+  width: 20px;
+  height: 13px;
+  font-size: 13px;
+  border: 1px solid black;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px;
 }
