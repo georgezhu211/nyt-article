@@ -1,8 +1,10 @@
 :root {
   --clr-black-600: #111;
   --clr-black-500: #333;
+  --clr-black-450: #444;
   --clr-black-400: #666;
   --clr-black-300: #ccc;
+  --clr-blue-btn: rgb(44, 85, 116);
 }
 
 
@@ -51,7 +53,7 @@ span.nav-icon {
 
 .nav-btn {
   border: 1px solid #366377;
-  background-color: #366377;
+  background-color: var(--clr-blue-btn);
   border-radius: 3px;
   font-family: 'Libre Franklin';
   font-size: 11px;
@@ -357,4 +359,81 @@ img {
   margin-top: 10px;
   margin-bottom: 40px;
   width: 650px;
+}
+
+.end-credit {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  color: var(--clr-black-450);
+}
+
+.end-credit > a {
+  color: var(--clr-black-450);
+}
+
+.read-comments {
+  display: flex;
+  padding: 30px 0;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+
+.read-btn {
+  border: 1px solid #366377;
+  background-color: var(--clr-blue-btn);
+  border-radius: 3px;
+  font-family: 'Libre Franklin';
+  font-size: 12px;
+  word-spacing: 2px;
+  padding: 9px 12px;
+  color: #ffffff;
+  margin-left: 9px;
+  width: 700px;
+  height: 37px;
+}
+
+.float-right {
+  justify-content: flex-end;
+}
+
+.subscribe-div {
+  display: flex;
+  flex-direction: column;
+  height: 280px;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+
+.subscribe-div > p {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--clr-black-600);
+}
+
+.subscribe-div > h1 {
+  font-size: 38px;
+  width: 400px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.subscribe-div > button {
+  width: 320px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  height: 45px;
+  border: none;
+  border-radius: 3px;
+}
+
+.subscribe-div > span {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 16px;
+  color: var(--clr-black-500);
 }
