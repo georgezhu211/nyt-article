@@ -192,7 +192,7 @@ span.nav-icon {
 
 .content > p {
   font-size: 22px;
-  line-height: 1.5;
+  line-height: 1.3;
   color: var(--clr-black-600);
   padding-bottom: 20px;
 }
@@ -276,7 +276,7 @@ img {
   font-weight: bold;
 }
 
-.inflation-div {
+.inflation-div1, .inflation-div2 {
   margin-top: 140px;
   display: flex;
   justify-content: space-between;
@@ -284,6 +284,11 @@ img {
   font-family: sans-serif;
   font-weight: lighter;
   line-height: 1.5;
+}
+
+.inflation-div2 {
+  margin-top: 150px;
+  padding-bottom: 50px;
 }
 
 .inflation-div > p {
@@ -294,4 +299,49 @@ img {
   font-weight: bold;
   padding-right: 10px;
   font-size: 12px;
+}
+
+.dark-break-line {
+  border: none;
+  height: 1px;
+  background-color: var(--clr-black-600);
+  width: 70px;
+  float: left;
+}
+
+.inflation-caption {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 12px;
+  padding-top: 10px;
+  clear: left;
+}
+
+.iframe-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video-caption {
+  margin-top: 15px;
+  margin-bottom: 50px;
+  line-height: 1.3;
+  color: var(--clr-black-500);
+  width: 500px;
+}
+
+.video-credit {
+  font-size: 14px;
+  color: var(--clr-black-400);
 }
