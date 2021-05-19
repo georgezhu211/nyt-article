@@ -4,15 +4,9 @@
   --clr-black-450: #444;
   --clr-black-400: #666;
   --clr-black-300: #bbb;
-  --clr-blue-btn: rgb(44, 85, 116);
+  --clr-blue-btn: rgb(52, 100, 136);
 }
 
-
-@font-face {
-  font-family: 'Libre Franklin';
-  src: url('../assets/Libre_Franklin/static/LibreFranklin-Bold.ttf')
-    format('truetype');
-}
 /* Navbar */
 .navbar {
   display: flex;
@@ -21,6 +15,10 @@
   padding-left: 100px;
   padding-right: 100px;
   border-bottom: 1px solid #ddd;
+  position: fixed;
+  background-color: white;
+  width: 90%;
+  z-index: 1;
 }
 
 .nav-left,
@@ -36,8 +34,9 @@ span.nav-icon {
 }
 
 .nav-space {
-  font-family: 'Libre Franklin';
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 14px;
+  font-weight: bold;
 }
 
 .nyt-logo {
@@ -55,17 +54,18 @@ span.nav-icon {
   border: 1px solid #366377;
   background-color: var(--clr-blue-btn);
   border-radius: 3px;
-  font-family: 'Libre Franklin';
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 11px;
   padding: 9px 12px;
   color: #ffffff;
   margin-left: 9px;
+  font-weight: bold;
 }
 /* Header */
 .header {
   width: 600px;
   margin: 0 auto;
-  padding: 50px 0 25px 0;
+  padding: 100px 0 25px 0;
   font-size: 40px;
   font-style: italic;
   font-weight: bold;
@@ -166,7 +166,7 @@ span.nav-icon {
 }
 
 .author {
-  font-family: 'Libre Frank', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: var(--clr-black-600);
   font-size: 14px;
   font-weight: bold;
@@ -180,7 +180,7 @@ span.nav-icon {
 }
 
 .date {
-  font-family: 'Libre Frank', sans-serif;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 12px;
   padding-bottom: 20px;
 
@@ -383,7 +383,7 @@ img {
   border: 1px solid #366377;
   background-color: var(--clr-blue-btn);
   border-radius: 3px;
-  font-family: 'Libre Franklin';
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-size: 12px;
   word-spacing: 2px;
   padding: 9px 12px;
@@ -447,6 +447,8 @@ img {
   grid-template-areas: "left right";
   grid-template-columns: 850px 320px;
   grid-gap: 30px;
+  border-bottom: 2px solid var(--clr-black-300);
+  margin-bottom: 1px;
 }
 
 .suggestion-left {
@@ -604,6 +606,7 @@ img {
 /* suggestion section 3 */
 .suggest3 {
   border-top: 1px solid black;
+  padding-bottom: 35px;
 }
 
 /* popular section */
@@ -614,3 +617,139 @@ img {
   border-top: 1px solid var(--clr-black-300);
 }
 
+/* Footer links */
+
+.footer-links {
+  border-top: 1px solid var(--clr-black-300);
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.go-home {
+  display: flex;
+  align-items: flex-end;
+  font-size: 11px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--clr-black-400);
+  padding-bottom: 10px;
+}
+
+.nyt-footer {
+  width: 180px;
+  padding: 10px 0;
+}
+
+.footer-body {
+  display: flex;
+}
+
+.footer-item {
+  width: 200px;
+}
+
+.list-links {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 13px;
+}
+
+.list-links li:first-child {
+  font-weight: bold;
+}
+
+.list-links li {
+  padding-bottom: 12px;
+}
+
+.footer-item:last-child {
+  border-left: 1px solid var(--clr-black-300);;
+}
+
+.last-list {
+  padding-left: 10px;
+}
+
+
+.last-list li{
+  font-weight: bold;
+  font-size: 15px;
+  display: flex;
+  padding-bottom: 15px;
+}
+
+span.material-icons-outlined {
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.last-list2, .last-list3 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 11px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.last-list2 {
+  border-bottom: 1px solid var(--clr-black-300);
+}
+
+.last-list2 li, .last-list3 li {
+  padding-bottom: 12px;
+}
+
+/* footer */
+
+.footer-container {
+  border-top: 1px solid var(--clr-black-300);
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 12px;
+}
+
+.footer {
+  display: flex;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: var(--clr-black-450);
+  font-size: 11px;
+  height: 35px;
+  align-items: center;
+  justify-content: space-around;
+  margin-bottom: 75px;
+}
+
+.sticky-ad {
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: white;
+  z-index: 1;
+}
+
+.sticky-ad p:first-child {
+  margin-left: 770px;
+}
+
+.limit {
+  font-weight: bold;
+}
+
+.expand {
+  font-weight: bold;
+  font-size: 11px;
+  display: flex;
+  align-items: center;
+  margin-left: 280px;
+}
+
+.arrow {
+  margin-left: 30px;
+}
